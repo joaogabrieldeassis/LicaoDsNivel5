@@ -3,6 +3,7 @@ namespace Nivel5
 {
     class Exercicio46
     {
+        //Teste
         static void Main(string[] args)
         {
             int toReceive= 0;
