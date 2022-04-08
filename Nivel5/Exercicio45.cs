@@ -20,7 +20,6 @@ namespace Nivel5
             {
                 Console.WriteLine("Lista original: {0}", j);
             }
-            Console.WriteLine("=============================");
             Array.Reverse(numbers);
             foreach (var k in numbers)
             {
