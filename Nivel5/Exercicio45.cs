@@ -5,13 +5,31 @@ namespace Nivel5
     {
         static void Main1(string[] args)
         {
-            int toReceive= 0;
-            int[] numbers = new int[5]{1,2,3,4,5,};
-            for (int i = 0; i > numbers.Length; i++)
+            int numberOfElements;
+            Console.WriteLine("Digite quantos numeros irá por no vetor: ");
+            numberOfElements = Convert.ToInt32(Console.ReadLine());
+
+            int[] numbers = new int[numberOfElements];
+
+            for (int i = 0; i < numberOfElements; i++)
             {
-                toReceive=numbers[i];
+                Console.WriteLine("Digite o {0}º número: ", i);
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.WriteLine(toReceive);
+            foreach (var j in numbers)
+            {
+                Console.WriteLine("Lista original: {0}", j);
+            }
+            Console.WriteLine("=============================");
+            Array.Reverse(numbers);
+            foreach (var k in numbers)
+            {
+                Console.WriteLine("Lista invertida: {0}", k);
+            }
         }
+
+
+
+
     }
 }
